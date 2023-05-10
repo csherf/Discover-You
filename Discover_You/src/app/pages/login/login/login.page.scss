@@ -4,13 +4,318 @@
     height: 166px;
     left: 42px;
     top: 25px;
-
+    text-align: right;
     justify-content: right;
-    font-family: 'IBM Plex Mono';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 83px;
+    top: 27%;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 
-    color: #ffffff;
+    color: #000000;
+}
+
+.loginBG{
+
+    position: relative;
+    width: 390px;
+    height: 844px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* Branding/Dark Grey
+    
+    Backgrounds
+    */
+    background: #5A5A5A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.loginRectangle {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 328px;
+    height: 419px;
+    left: 31px;
+    top: 25px;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* Branding/Pastel Purple
+
+    Branding Purpose
+    */
+    background: #A8A6FF;
+    border: 1px solid #000000;
+    /* Shadow/8px Shadow
+
+    Medium sized components (32px)
+    */
+    box-shadow: 8px 8px 0px #000000;
+
+}
+
+.loginRectangle2 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 328px;
+    height: 245px;
+    left: 31px;
+    top: 525px;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* Branding/Pastel Purple
+
+    Branding Purpose
+    */
+    background: #A8A6FF;
+    border: 1px solid #000000;
+    /* Shadow/8px Shadow
+
+    Medium sized components (32px)
+    */
+    box-shadow: 8px 8px 0px #000000;
+
+}
+
+.polygon1{
+    position: absolute;
+    width: 389px;
+    height: 280px;
+    left: 366.8px;
+    top: 1001.77px;
+    
+    /* Branding/Pastel Red
+
+    Branding purpose
+    */
+    background: #FF9F9F;
+    transform: rotate(-132.7deg);
+}
+.polygon2{
+    position: absolute;
+    width: 389px;
+    height: 280px;
+    left: 60%;
+    top: 10%;
+
+    /* Branding/Pastel Green
+
+    Branding Purpose
+    */
+    background: #B8FF9F;
+    transform: rotate(-45deg);
+}
+.polygon3{
+    position: absolute;
+    width: 531.15px;
+    height: 244.13px;
+    left: 199.79px;
+    top: 626.92px;
+    
+    /* Branding/Pastel Blue
+    
+    Branding Purpose
+    */
+    background: #A6FAFF;
+    transform: rotate(-132.7deg);
+}
+.polygon4{
+    position: absolute;
+    width: 389px;
+    height: 280px;
+    left: 187px;
+    top: 460.26px;
+    
+    /* Branding/Pastel Yellow
+    
+    Branding Purpose
+    */
+    background: #FFF59F;
+    transform: rotate(-63.54deg);
+}
+.polygon5{
+    position: absolute;
+    width: 389px;
+    height: 280px;
+    left: -170px;
+    top: 758.26px;
+    
+    /* Branding/Pastel Orange
+    
+    Branding Purpose
+    */
+    background: #FFC29F;
+    transform: rotate(-63.54deg);
+}
+
+.musicNote1 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    right: 57%;
+    top: 50%;
+
+    /* Branding/Pastel Yellow
+
+    Branding Purpose
+    */
+    background: #fff59f00;
+
+}
+.musicNote2 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    right: 53%;
+    top: 45%;
+
+    /* Branding/Pastel Yellow
+
+    Branding Purpose
+    */
+    background: #fff59f00;
+
+}
+.musicNote3 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    right: 47%;
+    top: 37.5%;
+
+    /* Branding/Pastel Yellow
+
+    Branding Purpose
+    */
+    background: #fff59f00;
+
+}
+.inputBoxUser{
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 160px 10px 10px;
+    gap: 10px;
+
+    position: relative;
+    width: 231px;
+    height: 39px;
+    top: 12%;
+    margin: auto;
+ 
+
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    /* Shadow/2px Shadow
+
+    Smaller sized components
+    (8px)
+    */
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 4px;
+}
+.inputBoxPass{
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 160px 10px 10px;
+    gap: 10px;
+
+    position: relative;
+    width: 231px;
+    height: 39px;
+    top: 22%;
+    margin: auto;
+ 
+
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    /* Shadow/2px Shadow
+
+    Smaller sized components
+    (8px)
+    */
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 4px;
+}
+
+.checkBox{
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 80%;
+    top: 65%;
+    width: 18px;
+    height: 18px;
+    accent-color: red;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 2px;
+}
+
+.signIn{
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: relative;
+    width: 175px;
+    height: 39px;
+    margin: auto;
+    top: 40%;
+    
+    background: #79F7FF;
+    mix-blend-mode: normal;
+    border: 2px solid #000000;
+    /* Shadow/2px Shadow
+
+    Smaller sized components
+    (8px)
+    */
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 19.5px;
 }
