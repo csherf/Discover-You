@@ -1,0 +1,247 @@
+.background{
+
+    position: relative;
+    width: 390px;
+    height: 844px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    background: #5A5A5A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+
+}
+
+.playlist-name-container{
+
+    box-sizing: border-box; 
+    position: relative;
+    overflow: hidden;
+    width: 356px;
+    height: 62px;
+    margin: auto;
+    top: 2.5%;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+
+    background: #A8A6FF;
+    border: 1px solid #000000;
+
+    box-shadow: 8px 8px 0px #000000;    
+
+}
+
+.playlist-name{
+
+    position: relative;
+
+    /* Font Properties */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+
+}
+
+.playlist-image-container{
+
+    box-sizing: border-box;
+
+    position: relative;
+    width: 307px;
+    height: 180px;
+    top: 6%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+
+    background: #A8A6FF;
+    border: 1px solid #000000;
+
+
+    box-shadow: 8px 8px 0px #000000;
+    
+}
+
+.red-circle {
+
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    right: 12.5%;
+
+    background: #FF9696;
+    box-shadow: 4px 4px 0px #000000;
+
+}
+.centered-image-dots {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered-image-arrows {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+.red-circle-play {
+    top: 15%;
+}
+.red-circle-dots {
+    top: 55%;
+}
+
+.album-picture-holder{
+
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    
+    background: #7D7D7D;
+    border: 1px solid #000000;
+
+
+}
+
+.album-picture-big {
+
+    display: inline-block;
+    width: 146px;
+    height: 146px;  
+    right: 15%;
+    object-fit: contain;
+
+}
+
+.album-picture-small {
+
+    position: absolute;
+    display: inline-block;
+    width: 47px;
+    height: 47px;  
+    left: -20.5%;
+    object-fit: contain;
+
+}
+
+
+.songs-container{
+
+    box-sizing: border-box;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 356px;
+    height: 406px;
+    margin: auto;
+    top: 10%;
+
+    background: #A8A6FF;
+    border: 1px solid #000000;
+
+    box-shadow: 8px 8px 0px #000000;
+
+}
+
+.song-information-container{
+
+    box-sizing: border-box;
+
+
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    padding-left:10px;
+
+    width: 275px;
+    height: 48px;
+    left: 18%;
+
+    background: #FF9F9F;
+    border: 1px solid #000000;
+
+    box-shadow: 4px 4px 0px #000000;
+
+}
+
+.song-title{
+
+    position: absolute;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    margin-top: 8px;
+
+}
+
+.artist-name{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    
+    color: #000000;
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;   
+
+    margin-top: 30px;
+}
+
+.sic-one{
+    top: 2%;
+}
+.sic-two{
+    top: 15.5%;
+}
+.sic-three{
+    top: 29.5%;
+}
+.sic-four{
+    top: 43.5%;
+}
+.sic-five{
+    top: 57.5%;
+}
+.sic-six{
+    top: 71.5%;
+}
+.sic-seven{
+    top: 85.5%;
+}
