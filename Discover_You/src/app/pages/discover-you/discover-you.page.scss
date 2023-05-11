@@ -1,0 +1,97 @@
+.header {
+    position: absolute;
+    width: 356px;
+    height: 89px;
+    left: 17px;
+    top: 29px;
+
+    background: #FF9696;
+    /* Shadow/8px Shadow
+    
+    Medium sized components (32px)
+    */
+    box-shadow: 8px 8px 0px #000000;
+    border-radius: 10px;
+}
+
+.h-title {
+    position: absolute;
+    width: 231px;
+    height: 42px;
+    left: 80px;
+    top: 53px;
+
+
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.scroll {
+    overflow: hidden;
+}
+
+.card {
+    box-sizing: border-box;
+    position: absolute;
+    width: 279px;
+    height: 549px;
+    left: 24px;
+    top: 155px;
+    background: #A8A6FF;
+    border: 1px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+
+    padding: 0;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+    &.proximity {
+        scroll-snap-type: y proximity;
+    }
+}
+
+
+.item {
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    color: rgba(white, .5);
+
+    text-align: center;
+    scroll-snap-align: start;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: 350px;
+}
+
+.like {
+    position: absolute;
+    width: 345px;
+    height: 56px;
+    left: 180px;
+    top: 435px;
+
+    background: #FF9696;
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 10px;
+    transform: rotate(90deg);
+}
+
+
+.favorite {
+    position: absolute;
+    left: 310px;
+    top: 645px;
+}

@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="header-box"></div>
+  <div class="header-text">What genre were you looking for?</div>
+  <div class="genre">
+
+
+  </div>
+  <button [routerLink]="['discover-you']" (click)="discover('YOU')" class="you">
+    <img src="{{mNotePth}}" alt="buttonpng" />
+    <p> YOU </p>
+  </button>
+  <button (click)="discover('POP')" class="pop">
+    <img src="{{mNotePth}}" alt="buttonpng" />
+    <p> POP</p>
+  </button>
+  <button (click)="discover('LO-FI')" class="lofi">
+    <img src="{{mNotePth}}" alt="buttonpng" />
+    <p> LO-FI</p>
+  </button>
+  <button (click)="discover('R & B')" class="RnB">
+    <img src="{{mNotePth}}" alt="buttonpng" />
+    <p> R & B</p>
+  </button>
+
+  <div class="similar"></div>
+  <div class="similar-text">Find similar songs</div>
+
+  <ion-input class="search">
+
+  </ion-input>
+</ion-content>
