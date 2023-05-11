@@ -12,6 +12,10 @@ const routes: Routes = [
   },  {
     path: 'welcome',
     loadChildren: () => import('./pages/welcome/welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'playlist',
+    loadChildren: () => import('./pages/playlist/playlist.module').then( m => m.PlaylistPageModule)
   }
 
 ];
