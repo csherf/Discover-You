@@ -1,9 +1,7 @@
 .header {
-    position: absolute;
+    position: relative;
     width: 307px;
     height: 166px;
-    left: 42px;
-    top: 25px;
     text-align: right;
     justify-content: right;
     font-family: 'Arial';
@@ -11,8 +9,8 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 83px;
-    top: 27%;
-    left: 49%;
+    top: -20%;
+    left: 48%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 
@@ -34,6 +32,7 @@
     */
     background: #5A5A5A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 
 }
 .loginRectangle {
@@ -66,111 +65,91 @@
 .loginRectangle2 {
 
     box-sizing: border-box;
-
     position: absolute;
     width: 328px;
     height: 245px;
-    left: 31px;
-    top: 525px;
-    top: 70%;
     left: 50%;
-    margin-right: -50%;
+    top: 70%;
     transform: translate(-50%, -50%);
-    /* Branding/Pastel Purple
-
-    Branding Purpose
-    */
+    /* Branding/Pastel Purple */
     background: #A8A6FF;
     border: 1px solid #000000;
-    /* Shadow/8px Shadow
-
-    Medium sized components (32px)
-    */
+    /* Shadow/8px Shadow */
     box-shadow: 8px 8px 0px #000000;
 
-}
+  }
+  
 
-.polygon1{
+  .polygon1 {
+    content: "";
     position: absolute;
-    width: 389px;
-    height: 280px;
-    left: 366.8px;
-    top: 1001.77px;
-    
-    /* Branding/Pastel Red
-
-    Branding purpose
-    */
-    background: #FF9F9F;
+    width: 0;
+    height: 0;
+    left: -15%;
+    top: 60%;
+    border-style: solid;
+    border-width: 0 389px 280px 0;
+    border-color: transparent #FF9F9F transparent transparent;
     transform: rotate(-132.7deg);
-}
-.polygon2{
-    position: absolute;
-    width: 389px;
-    height: 280px;
-    left: 60%;
-    top: 10%;
-
-    /* Branding/Pastel Green
-
-    Branding Purpose
-    */
-    background: #B8FF9F;
-    transform: rotate(-45deg);
-}
+  }
+  .polygon2 {
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 20%;
+    top: 0%;
+    border-style: solid;
+    border-width: 389px 0 0 280px;
+    border-color: transparent transparent transparent #B8FF9F;
+    transform: rotate(-73.1deg);
+  }
 .polygon3{
-    position: absolute;
-    width: 531.15px;
-    height: 244.13px;
-    left: 199.79px;
-    top: 626.92px;
-    
-    /* Branding/Pastel Blue
-    
-    Branding Purpose
-    */
-    background: #A6FAFF;
-    transform: rotate(-132.7deg);
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 13%;
+    top: 40%;
+    border-style: solid;
+    border-width: 389px 0 0 280px;
+    border-color: transparent transparent transparent #A6FAFF;
+    transform: rotate(-83.5deg);
 }
 .polygon4{
-    position: absolute;
-    width: 389px;
-    height: 280px;
-    left: 187px;
-    top: 460.26px;
-    
-    /* Branding/Pastel Yellow
-    
-    Branding Purpose
-    */
-    background: #FFF59F;
-    transform: rotate(-63.54deg);
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 0%;
+    top: -115%;
+    border-style: solid;
+    border-width: 389px 0 0 280px;
+    border-color: transparent transparent transparent #FFC29F;
+    transform: rotate(-16.7deg);
 }
 .polygon5{
-    position: absolute;
-    width: 389px;
-    height: 280px;
-    left: -170px;
-    top: 758.26px;
-    
-    /* Branding/Pastel Orange
-    
-    Branding Purpose
-    */
-    background: #FFC29F;
-    transform: rotate(-63.54deg);
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 80%;
+    top: -100%;
+    border-style: solid;
+    border-width: 389px 0 0 280px;
+    border-color: transparent transparent transparent #FFF59F;
+    transform: rotate(43deg);
 }
 
 .musicNote1 {
 
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
     width: 52px;
     height: 52px;
-    position: absolute;
-    right: 57%;
-    top: 50%;
+    right: -2%;
+    top: 65%;
 
     /* Branding/Pastel Yellow
 
@@ -183,12 +162,11 @@
 
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
     width: 63px;
     height: 63px;
-    position: absolute;
-    right: 53%;
-    top: 45%;
+    right: 0%;
+    top: 50%;
 
     /* Branding/Pastel Yellow
 
@@ -201,12 +179,11 @@
 
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
     width: 96px;
     height: 96px;
-    position: absolute;
-    right: 47%;
-    top: 37.5%;
+    right: 5%;
+    top: 33%;
 
     /* Branding/Pastel Yellow
 
@@ -262,7 +239,6 @@
     height: 39px;
     top: 22%;
     margin: auto;
- 
 
     
     background: #FFFFFF;
@@ -281,7 +257,7 @@
 
     position: absolute;
     right: 80%;
-    top: 65%;
+    top: 60%;
     width: 18px;
     height: 18px;
     accent-color: red;
@@ -295,18 +271,17 @@
     box-sizing: border-box;
 
     /* Auto layout */
-    
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 10px;
     gap: 10px;
 
-    position: relative;
+
     width: 175px;
     height: 39px;
     margin: auto;
-    top: 40%;
+    top: 20%;
     
     background: #79F7FF;
     mix-blend-mode: normal;
@@ -318,4 +293,26 @@
     */
     box-shadow: 2px 2px 0px #000000;
     border-radius: 19.5px;
+}
+
+.RememberMe{
+    
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 25%;
+    top: 21.25%;
+    
+    /* Content/Small content
+    
+    For making a small sized components
+    */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;
+
 }
