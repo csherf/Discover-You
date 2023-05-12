@@ -5,8 +5,6 @@
 
 <ion-content [fullscreen]="true">
 
- 
-
     <div class="welcomeContainer">
       <ion-button fill="clear" (click)="goToHome()" class="settings">
         <ion-icon  slot="icon-only" name="settings-outline"></ion-icon>
@@ -16,44 +14,78 @@
     </div>
 
     <div class="mainContainer">
-      <p class="mainText">Yours</p>
+      <p class="mainText">Your Playlists</p>
       <button  [routerLink]="['playlist']" class="playlistBase1">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/innerspeaker.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </button>
       <div class="playlistBase2">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/Playlist1.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </div>
       <div class="playlistBase3">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/Playlist2.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </div>
       <div class="playlistBase4">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/Playlist3.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </div>
       <div class="playlistBase5">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/Playlist4.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </div>
       <div class="playlistBase6">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/Playlist5.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </div>
       <div class="playlistBase7">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/Playlist6.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </div>
       <div class="playlistBase8">
+        <div class="album-picture-holder album-picture-small">
+          <img src="../../assets/TheChronic.jpg">
+        </div>
         <p class="playlistT">Playlist</p>
       </div>
 
-      <p class="mainText">Recent Plays</p>
+      <p class="mainText recent">Recent Plays</p>
 
-      <div class="albumBox position1"></div>
-      <div class="albumBox position2"></div>
-      <div class="albumBox position3"></div>
-      <div class="albumBox position4"></div>
-      <div class="albumBox position5"></div>
-      <div class="albumBox position6"></div>
+      <div class="albumBox position1">
+          <img src="../../assets/Pacific.jpg">
+      </div>
+      <div class="albumBox position2">
+        <img src="../../assets/Lethal.jpg">
+      </div>
+      <div class="albumBox position3">
+        <img src="../../assets/TheChronic.jpg">
+      </div>
+      <div class="albumBox position4">
+        <img src="../../assets/innerspeaker.jpg">
+      </div>
+      <div class="albumBox position5">
+        <img src="../../assets/Equinoxe.jpg">
+      </div>
+      <div class="albumBox position6">
+          <img src="../../assets/FlowerBoy.jpg">
+      </div>
 
 
     </div>
-
-
 
 </ion-content>

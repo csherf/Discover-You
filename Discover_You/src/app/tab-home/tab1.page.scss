@@ -84,8 +84,8 @@
     position: relative;
     width: 282px;
     height: 39px;
-    left: 5%;
-    top: -3%;
+    left: 4%;
+    top: -1%;
 
     /* Title/Medium Title
 
@@ -101,6 +101,10 @@
 
     color: #000000;
 
+}
+
+.recent{
+    top: -5%;
 }
 
 .playlistBase1{
@@ -357,3 +361,36 @@
     left: 240px;
   }
   
+.album-picture-holder{
+
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    
+    background: #7D7D7D;
+    border: 1px solid #000000;
+
+
+}
+
+.album-picture-big {
+
+    display: inline-block;
+    width: 146px;
+    height: 146px;  
+    right: 15%;
+    object-fit: contain;
+
+}
+
+.album-picture-small {
+
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 35px;  
+    left: 3%;
+    top: 5%;
+    object-fit: contain;
+
+}
