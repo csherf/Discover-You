@@ -1,22 +1,25 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>welcome</ion-title>
-  </ion-toolbar>
+
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
 
-  <div class="background">
+ 
 
     <div class="welcomeContainer">
+      <ion-button fill="clear" (click)="goToHome()" class="settings">
+        <ion-icon  slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
       <p class="welcomeBack">Welcome Back John!</p>
+     
     </div>
 
     <div class="mainContainer">
       <p class="mainText">Yours</p>
-      <div class="playlistBase1">
+      <button  [routerLink]="['playlist']" class="playlistBase1">
         <p class="playlistT">Playlist</p>
-      </div>
+      </button>
       <div class="playlistBase2">
         <p class="playlistT">Playlist</p>
       </div>
@@ -51,11 +54,6 @@
 
     </div>
 
-  </div>
 
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">welcome</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
 </ion-content>

@@ -40,7 +40,7 @@ export class DiscoverYouPage implements OnInit {
 
   }
   rate(rating: number) {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 0; i <= 4; i++) {
       this.ratings[i] = "Star.svg";
 
     }
@@ -51,7 +51,7 @@ export class DiscoverYouPage implements OnInit {
       return
 
     } else {
-      for (let i = 1; i <= rating; i++) {
+      for (let i = 0; i <= rating; i++) {
         this.ratings[i] = "Star_filled.svg"
       }
       this.current_rating = rating;

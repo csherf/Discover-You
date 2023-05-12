@@ -18,7 +18,9 @@
           </ion-col>
           <ion-col>
             <ion-button color="dark" fill="clear" (click)="playAudio(item)">
-              <ion-icon  slot="icon-only" name="play"></ion-icon>
+              <ion-icon *ngIf="!playing" slot="icon-only" name="play"></ion-icon>
+              <ion-icon *ngIf="playing" slot="icon-only" name="pause"></ion-icon>
+
               </ion-button>
           </ion-col>
 

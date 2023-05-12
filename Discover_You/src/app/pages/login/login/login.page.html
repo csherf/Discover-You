@@ -1,10 +1,6 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
+
+<ion-content scrollY="false" [fullscreen]="true">
   
   <div class="loginBG">
     <div class="polygon1"></div>
@@ -27,7 +23,7 @@
     <p class="RememberMe">Remember Me</p>
     <input type="checkbox" class="checkBox">
       
-    <button class="signIn">Sign in</button>
+    <button class="signIn" (click)="goToHome()"  >Sign in</button>
   </div>
   
   
