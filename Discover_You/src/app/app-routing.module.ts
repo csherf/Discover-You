@@ -13,7 +13,11 @@ const routes: Routes = [
   {
     path: 'playlist',
     loadChildren: () => import('./pages/playlist/playlist.module').then( m => m.PlaylistPageModule)
+  },  {
+    path: 'listening',
+    loadChildren: () => import('./pages/listening/listening.module').then( m => m.ListeningPageModule)
   }
+
 
 ];
 @NgModule({
