@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
+  },
+  {
+    path: 'playlist',
+    loadChildren: () => import('../pages/playlist/playlist.module').then( m => m.PlaylistPageModule)
   }
 ];
 

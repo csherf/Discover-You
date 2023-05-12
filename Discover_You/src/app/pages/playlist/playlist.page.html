@@ -1,13 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Playlist</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
 
 
-  <div class="background">
+
 
     <div class="playlist-name-container">
       <p class="playlist-name">Playlist/Album Name</p>
@@ -17,8 +13,12 @@
       <div class="album-picture-holder album-picture-big">
         <img src="../../assets/innerspeaker.jpg">
       </div>
-      <button class="red-circle play-button red-circle-play">
-        <img src="../../assets/arrow.svg" class="centered-image-arrows">
+      <button class="red-circle play-button red-circle-play" (click)="playAudio()">
+        <img *ngIf="!playing" src="../../assets/arrow.svg" class="centered-image-arrows">
+      
+        
+        <ion-icon size="xlarge" *ngIf="playing" name="pause" ></ion-icon>
+
       </button>
       <button class="red-circle play-button red-circle-dots">
         <img src="../../assets/dots.svg" class="centered-image-dots">
@@ -77,14 +77,4 @@
       </div>
     </div>
 
-
-  </div>
-
-
-
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Playlist</ion-title>
-    </ion-toolbar>
-  </ion-header>
 </ion-content>
