@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <div class="header"></div>
+  <div class="h-title">Discover You</div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div (scroll)="onScroll($event)" class="card">
+      <li *ngFor="let item of songs" class="item" id="{{item}}">
+        <img [src]="currentImg" alt="img of song {{item}}" />
+        <ion-row>
+          <ion-col>
+            <ion-button color="dark" fill="clear" (click)="playAudio(item)">
+              <ion-icon  slot="icon-only" name="play-back"></ion-icon>
+
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="dark" fill="clear" (click)="playAudio(item)">
+              <ion-icon *ngIf="!playing" slot="icon-only" name="play"></ion-icon>
+              <ion-icon *ngIf="playing" slot="icon-only" name="pause"></ion-icon>
+
+              </ion-button>
+          </ion-col>
+
+          <ion-col>
+            <ion-button color="dark" fill="clear" (click)="playAudio(item)">
+              <ion-icon  slot="icon-only" name="play-forward"></ion-icon>
+
+              </ion-button>
+          </ion-col>
+
+        </ion-row>
+       
+      </li>
+  </div>
+
+  <div  class="like">
+    <ion-button fill="clear" (click)="rate(4)">
+      <ion-icon #rate5 slot="icon-only" [src]="path+ratings[4]"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" (click)="rate(3)">
+      <ion-icon #rate4 slot="icon-only" [src]="path+ratings[3]"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" (click)="rate(2)">
+      <ion-icon #rate3 slot="icon-only" [src]="path+ratings[2]"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" (click)="rate(1)">
+      <ion-icon #rate2 slot="icon-only" [src]="path+ratings[1]"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" (click)="rate(0)">
+      <ion-icon #rate1 slot="icon-only" [src]="path+ratings[0]"></ion-icon>
+    </ion-button>
+
+  </div>
+  <ion-button fill="clear" class="favorite" (click)="like()">
+    <ion-icon color="dark" size="large" [name]="liked"></ion-icon>
+  </ion-button>
+  
+
+</ion-content>
